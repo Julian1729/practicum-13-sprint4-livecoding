@@ -17,18 +17,21 @@
       <div class="modal">
         <div class="modal__box">
           <button class="button button_close modal__close-btn"></button>
-          <form id="edit-form" name="edit">
+          <form class="edit-form">
             <label>name</label>
-            <input id="edit-name-input" type="text" name="name" />
+            <input class="edit-form__name" type="text" name="card-name" />
             <label>title</label>
-            <input id="edit-title-input" type="text" name="title" />
+            <input class="edit-form__title" type="text" name="title" />
             <button>save</button>
           </form>
         </div>
       </div>
       <ul class="card-grid">
         <li class="card">
-          <button class="button button_edit card__button"></button>
+          <button
+            class="button button_edit card__button"
+            id="card-edit-btn"
+          ></button>
           <img
             class="card__logo"
             src="images/julian_logo.png"
@@ -40,8 +43,8 @@
               src="images/julian_memoji.png"
               alt="Julian in cartoon format"
             />
-            <h2 class="card__name">Julian Hernandez</h2>
-            <p class="card__title">Full-stack Web Developer</p>
+            <h2 class="js-card-name card__name">Julian Hernandez</h2>
+            <p class="js-card-title card__title">Full-stack Web Developer</p>
           </div>
           <p class="card__contact">
             215.400.0468 / julian@julianhernandez.me / julianhernandez.me
@@ -49,7 +52,6 @@
         </li>
       </ul>
     </div>
-    <!-- ask: why does this need to be at the bottom? -->
-    <script src="index.js" type="text/javascript"></script>
+    <script src="scripts/index.js" type="text/javascript"></script>
   </body>
 </html>
